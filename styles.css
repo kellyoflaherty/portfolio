@@ -141,6 +141,8 @@ h2 {
 	position:absolute;
 	text-align: center;
 	border: none;
+	padding: 0.5%;
+	background-color: DodgerBlue;
 	width: 10vw;
 	display:block;
 	margin:43% 30% 0;
@@ -149,8 +151,6 @@ h2 {
 #showreelBtnDiv p {
 	color:white;
 	font-size:1vh;
-	padding: 0.5%;
-	background-color: DodgerBlue;
 }
 
 #showreelBtnDiv a {
