@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<head>
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- icon link for buttons etc.-->
+	<!-- icon link for buttons etc.-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id = "sideHeader">
+	<img id ="headerLogo" src="images/logo_cropped.png">
+	<h2 class ="siteTitle">Kelly O'Flaherty</h2>
+	<h2 class ="siteTitle">Compositing & Animation</h2>
+	<!--<h2 class = "pageHeader">Lightbox</h2> -->
+</div>
+
+<div id ="mainContent"> 
+
+	
+	<!-- Compositing and Animation Gallery -->
+	<section id = "compGallery"> 
+	<!-- gallery navigation to load new gallery on click -->
+	<nav class = "galleryNav">
+	<!--3d, compani, illustration, life drawing, photography, short film -->
+		<ul id = "navList">
+			<li class = "navLinks"><a href = "portfolio.html"><p>Compositing/Animation</p></a></li>
+			<li class = "navLinks"><a href = "illustration.html"><p>Illustration</p></a></li>
+			<li class = "navLinks"><a href = "3dwork.html"><p>3D Work</p></a></li>
+			<li class = "navLinks"><a href = "photography.html"><p>Photography</p></a></li>
+			<li class = "navLinks"><a href = "lifedrawing.html"><p>Life Drawing</p></a></li>
+			<li class = "navLinks"><a href = "gradfilm.html"><p>Graduate Film</p></a></li>
+		</ul>
+	</nav>
+	
+	<!-- inputElement.addEventListener('click', function(){
+    gotoNode(result.name);
+	});-->
+	
+	
+	<div id = "pageWrapper">
+	<h2 class ="sectionTitle"> Graduate Film </h2>
+	<!-- add sub nav that will load relevant content -->
+	<!-- concept & intro, development/boards, animatic, 3d models (in progress) -->
+		<nav id = "filmSubNav">
+			<ul id = "filmNavList">
+			<!-- just make as button, no need to implement hash for this -->
+				<li class = "filmNavLink">
+					<button class = "filmNavButton" onclick="loadFilmContent('#conceptLoad')"><p>Concept</p></button>
+				</li>
+				<li class = "filmNavLink">
+					<button class = "filmNavButton" onclick="loadFilmContent('#developmentLoad')"><p>Development</p></button>
+				</li>
+				<li class = "filmNavLink">
+					<button class = "filmNavButton" onclick="loadFilmContent('#animaticLoad')"><p>Animatic</p></button>
+				</li>
+				<li class = "filmNavLink">
+					<button class = "filmNavButton" onclick="loadFilmContent('#3dLoad')"><p>3d Models</p></button>
+				</li>
+			</ul>
+		
+		</nav>
+		
+		<div id = "replaceContent">
+			<!-- button replace content -->
+			<!-- initially concept load -->
+			<div id = "posterDiv">
+				<img id = "conceptPoster" src = "images/shortFilm/poster_opt.jpg">
+
+				<p id = "projectText">"The Light in the Darkness" is my forthcoming graduate short film which I am completing as part of my BSc in Digital Animation Production. The film will be created in 3D through Maya and Houdini. <br><br>
+				The film tells the story of a young girl enveloped in darkness who suddenly finds a bulb of light floating before her, ushering her forward. In her determination to catch it, she must face a number of challenges.</p>
+			</div>
+		</div>		
+		
+	</div>
+	
+	
+	</section>
+</div>
+
+
+    
+</body>
+
+<!--<footer>
+	<p>&copy; Kelly O'Flaherty 2018. E-mail: kelly-oflaherty@hotmail.com</p>
+</footer>-->
+
+<script type ="text/javascript" src = "scripts.js"></script>
+<script type ="text/javascript" src = "js/buttonFntn.js"></script>
+<script type ="text/javascript" src = "js/hashchangeplugin.js"></script>
+<script type ="text/javascript" src = "js/hashchange.js"></script>
+
+
+</html>

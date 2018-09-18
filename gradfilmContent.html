@@ -1,0 +1,273 @@
+<!-- content to load into grad film page on button click -->
+
+		<!-- concept art - development page -->
+		<!--<img id = "filmCover" src = "images/shortFilm/concept.jpg"> -->
+<head>
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- icon link for buttons etc.-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	
+</head>
+
+		
+		<!-- concept content -->
+		<div id = "conceptLoad">
+			<div id = "posterDiv">
+				<img id = "conceptPoster" src = "images/shortFilm/poster_opt.jpg">
+		
+			<!-- text beside poster about project -->
+			<p id = "projectText">"The Light in the Darkness" is my forthcoming graduate short film which I am completing as part of my BSc in Digital Animation Production. The film will be created in 3D through Maya and Houdini. <br><br>
+			The film tells the story of a young girl enveloped in darkness who suddenly finds a bulb of light floating before her, ushering her forward. In her determination to catch it, she must face a number of challenges.</p>
+		
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		<div id = "animaticLoad"> 
+			<div id = "animaticContain">
+				<iframe id = "animaticFrame" src="https://www.youtube.com/embed/libjoIq8-l0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		
+		</div>
+		
+
+		<!-- character model sheet - 3d page -->
+		<div id = "3dLoad">
+			<p id ="3dText"> As the project progresses, I will upload progress pictures and videos here! </p>
+			
+			<div class="row">
+		
+				<!-- style moodboard -->
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(1)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/emily/character_modelsheet.jpg">
+					</a>
+				</div>
+			</div>
+			
+			
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div id="popGallery">
+
+					<!-- slideshow pop up -->
+					
+					<!-- style moodboard -->
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/emily/character_modelsheet.jpg">
+						<div class = "textDescription"><h3> Emily Model Sheet </h3><p>This is a model sheet of the main character that I used as reference images to build my 3d character.</p></div>
+					</div>	
+
+					<!-- arrows to progress through main gallery -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+					
+			
+					<!-- bottom thumbnails on popup -->
+					<div id = "thumbnailRow">
+						
+					</div>
+					
+					<!-- circle nav to progress thumbnails -->
+					<div id = "thumbNav">
+
+					</div>
+		
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<!-- development page-->
+		<div id = "developmentLoad">
+			<!-- pre-production section with gallery as usual -->
+			<p id = "preProText"> Pre-Production Assets, Sketches etc. </p>
+	
+			<!-- MAIN SLIDES -->
+		
+			<div class="row">
+		
+				<!-- style moodboard -->
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(1)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/moodboards/style_moodboard_thumb.png">
+					</a>
+				</div>
+			
+				<!-- GE moodboard -->
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(2)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/moodboards/film_GExpressionism_thumb.png">
+					</a>
+				</div>
+				
+				<!-- surrealism moodboard --> 
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(3)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/moodboards/film_surrealism_thumb.png">
+					</a>
+				</div>
+				
+				<!-- character moodboard -->
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(4)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/moodboards/character_moodboard_thumb.png">
+					</a>
+				</div>
+			
+				<!-- character sketches -->
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(5)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/emily/character_sketches_thumb.png">
+					</a>
+				</div>
+				
+				<!-- character colour -->
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(6)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/emily/character_colour_thumb.png">
+					</a>
+				</div>
+
+				<!-- character expressions -->
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(7)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/emily/character_expressions_thumb.png">
+					</a>
+				</div>
+				
+				<!-- character posed -->
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(8)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/emily/character_thumb.png">
+					</a>
+				</div>
+				
+				<!-- doll -->
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(9)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/doll_thumb.png">
+					</a>
+				</div>
+				
+				<!-- light -->
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(10)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/light_thumb.png">
+					</a>
+				</div>
+				
+				<!-- colour palette -->
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(11)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/colour_palette_thumb.png">
+					</a>
+				</div>
+
+				<!-- colour keys -->
+				<div class="column">
+					<a onclick="openModal();copyThumbs();currentSlide(12)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/shortFilm/colourKeys_thumb.png">
+					</a>
+				</div>
+			
+
+  
+			</div>
+			
+			
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div id="popGallery">
+
+					<!-- slideshow pop up -->
+					
+					<!-- style moodboard -->
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/moodboards/style_moodboard.jpg">
+						<div class = "textDescription"><h3> Style Moodboard </h3><p>I begun my design phase by putting together a general style moodboard for how I want the film to look.</p></div>
+					</div>
+				
+					<!-- GE moodboard -->
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/moodboards/style_GExpressionism.jpg">
+						<div class = "textDescription"><h3> German Expressionism Board </h3><p>I have always admired the style of German Expressionism so created a moodboard for inspiration for my film.</p></div>
+					</div>
+				
+					<!-- surrealism moodboard --> 
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/moodboards/film_surrealism.jpg">
+						<div class = "textDescription"><h3> Surrealism Board </h3><p>Moodboard featuring pieces of surrealism art for further inspiration for the film's style and design. </p></div>
+					</div>
+				
+					<!-- character moodboard -->
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/moodboards/character_moodboard.jpg">
+						<div class = "textDescription"><h3> Character Sketches </h3><p>Sketches and development for main character design.</p></div>
+					</div>
+					
+					<!-- character sketches -->
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/emily/character_sketches.jpg">
+						<div class = "textDescription"><h3> Character Sketches </h3><p>Sketches and development for main character design.</p></div>
+					</div>
+				
+					<!-- character colour -->
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/emily/character_colours.jpg">
+						<div class = "textDescription"><h3> Character Colour Development </h3><p>Colour variation and design developement of main character.</p></div>
+					</div>
+
+					<!-- character expressions -->
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/emily/character_expressions.jpg">
+						<div class = "textDescription"><h3> Character Expressions </h3><p>Some expressions for the main character.</p></div>
+					</div>
+				
+					<!-- character posed -->
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/emily/character_posed.jpg">
+						<div class = "textDescription"><h3> Main Character Design </h3><p> Final design of main character for my graduate film.</p></div>
+					</div>
+				
+					<!-- doll -->
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/doll.jpg">
+						<div class = "textDescription"><h3> Doll Prop Design </h3><p>Design for a prop doll that features in the film.</p></div>
+					</div>
+				
+					<!-- light -->
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/light.jpg">
+						<div class = "textDescription"><h3> Light design </h3><p> Rough design idea for the floating bulb of light character.</p></div>
+					</div>
+				
+					<!-- colour palette -->
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/colour_palettes.jpg">
+						<div class = "textDescription"><h3> Colour Palette </h3><p>For this film, I referenced surrealism art for the design inspiration and used examples to draw up colour palettes for the different scenes in the film. </p></div>
+					</div>
+
+					<!-- colour keys -->
+					<div class="popSlides">
+						<img class = "imgStyle" src="images/shortFilm/colourKeys.jpg">
+						<div class = "textDescription"><h3> Colour Keys </h3><p> I chose some shots from my animatic of the film of added some colour to give an idea of how the film will look in its colour progression.</p></div>
+					</div>
+					
+					
+					
+					<!-- arrows to progress through main gallery -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+					
+			
+					<!-- bottom thumbnails on popup -->
+					<div id = "thumbnailRow">
+						
+					</div>
+					
+					<!-- circle nav to progress thumbnails -->
+					<div id = "thumbNav">
+
+					</div>
+		
+				</div>
+				
+			</div>
+		
+		</div>

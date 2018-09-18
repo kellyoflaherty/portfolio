@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<head>
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	
+	<!-- icon link for buttons etc.-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id = "sideHeader">
+
+
+	<img id ="sideHeaderLogo" src="images/logo_cropped.png">
+	<p class ="siteTitle">Kelly O'Flaherty</p>
+	<p class ="siteTitle">Compositing & Animation</p>
+	<!--<h2 class = "pageHeader">Lightbox</h2> -->
+</div>
+
+<aside class = "transform-active">
+	<!-- button on right leads to site-->
+	<!-- onclick="loadContent('portfolio.html'); -->
+	<a id ="enterBtn" ><i class="far fa-arrow-alt-circle-left"></i></a>
+	<p id ="enterSiteText"> SHOWREEL </p>
+</aside>
+	
+
+<div id ="mainContent"> 
+
+	
+	<!-- Compositing and Animation Gallery -->
+	<section id = "compGallery"> 
+	<!-- gallery navigation to load new gallery on click -->
+	<nav class = "galleryNav">
+	<!--3d, compani, illustration, life drawing, photography, short film -->
+		<ul id = "navList">
+			<li class = "navLinks"><a href = "portfolio.html"><p>Compositing/<br>Animation</p></a></li>
+			<li class = "navLinks"><a href = "illustration.html"><p>Illustration</p></a></li>
+			<li class = "navLinks"><a href = "3dwork.html"><p>3D Work</p></a></li>
+			<li class = "navLinks"><a href = "photography.html"><p>Photography</p></a></li>
+			<li class = "navLinks"><a href = "lifedrawing.html"><p>Life Drawing</p></a></li>
+			<li class = "navLinks"><a href = "gradfilm.html"><p>Graduate Film</p></a></li>
+		</ul>
+	</nav>
+	
+
+	
+	<div id = "pageWrapper">
+	<h2 class ="sectionTitle"> Compositing & Animation </h2>
+		<!-- MAIN SLIDES -->
+		<div class="row">
+			<!-- spook screen -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(1)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/compani/spook_screen/spookScreen_thumb.png"> <div class ="thumbText"> <p> Spook Screen Promo </p></div>
+				</a>
+				
+			</div>
+			<!-- digital matte painting -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(2)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/compani/dmp/dmp_thumb.jpg"> <div class ="thumbText"> <p> Digital Matte Painting </p></div>
+				</a>
+				
+			</div>
+			<!-- WITW -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(3)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/compani/wishes/wishes_thumb.png"> <div class ="thumbText"> <p> Short Film </p></div>
+				</a>
+				
+			</div>
+			<!-- 3d Boat -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(4)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/compani/boat/boat_thumbPic.jpg"> <div class ="thumbText"> <p> 3D Boat Composite </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- lipsync -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(5)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/compani/lip_sync/lipsync_thumb.jpg"> <div class ="thumbText"> <p> Animated Lip-sync </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- LEGO Ident -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(6)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/compani/lego/lego_thumb.jpg"> <div class ="thumbText"> <p> Lego Stop Motion </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- anticipation -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(7)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/compani/anticipation/anticipation_thumb.jpg"> 
+				<div class ="thumbText"> <p> Anticipation Exercise </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- sneak -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(8)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/compani/sneak/sneak_thumb.jpg"> 
+				<div class ="thumbText"> <p> Sneak Exercise </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- weight exercise -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(9)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/compani/weight/weight_thumb.jpg"> 
+				<div class ="thumbText"> <p> Weight Exercise </p></div>
+				</a>
+				
+			</div>
+  
+		</div>
+		
+		
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div id="popGallery">
+
+				<!-- slideshow pop up -->
+				
+				<!-- Spook Screen animation--->
+				<div class="popSlides">
+					<!--<div class="numbertext">1 / 4</div>-->
+					<iframe class = "imgStyle" src="https://www.youtube.com/embed/LhkrAvVz82U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<!-- <img class="imgStyle" src="images/compani/dmp/dmp_bright_edit_opt.jpg"> -->
+					<div class = "textDescription"><h3> Spook Screen Logo Animation </h3><p>I created a short animation whilst working with DeepRed Productions in preparation for an upcoming horror film festival (Spook Screen 2018). I designed the logo and laurels for the festival and so made a short animation using my design for use in promotional material and to show before programmes during the festival.</p></div>
+				</div>
+				
+				<!-- Digital Matte Painting animation -->
+				<div class="popSlides">
+					<!--<div class="numbertext">2 / 4</div> -->
+					<iframe class = "imgStyle" src="https://www.youtube.com/embed/9Lx9_hnVZQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<!-- <img class="imgStyle" src="images/compani/dmp/dmp_bright_edit_opt.jpg"> -->
+					<div class = "textDescription"><h3> Digital Matte Painting </h3><p>I created this digital matte painting as part of a college assignment. I developed the concept and shot the footage in Blackrock Castle, Cork (moon and cliffs sourced online). This image was composited in Photoshop.</p></div>
+				</div>
+				
+				<!-- WITW -->
+				<div class="popSlides">
+					<!--<div class="numbertext">3 / 4</div>-->
+					<iframe class = "imgStyle" src="https://www.youtube.com/embed/nIrCmUqyWRE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class = "textDescription"><h3> Wishes in the Wind, Short Film </h3><p>This is a short film that I worked on during my second year on the Digital Animation Production course in LIT, Clonmel. I worked as part of a team of four to produce this project from conception to completion. My roles involved scriptwriting, production managing and background and character design (in collaboration). My primary role was that of compositor and in particular, creating the particle effects for the fairy character. I also animated the scene with the bride and the opening parallax shot. As well as this, I also worked on the sound design and music for the film.</p></div>
+				</div>
+
+				<!-- 3d boat -->
+				<div class="popSlides">
+					<iframe class = "imgStyle" src="https://www.youtube.com/embed/vUuzN9b5kxM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class = "textDescription"><h3> 3D Boat Composite </h3><p> This was created as part of an exercise in practicing the implementation of CG elements with live action footage. The footage was tracked in PFTrack and the data was subsequently used in Maya to render out the 3d boat (sourced online) to match. Further alterations and compositing effects (colour grading and fog effects, etc) were added in After Effects. </p></div>
+				</div>
+				
+				<!-- Lip sync -->
+				<div class="popSlides">
+					<iframe class = "imgStyle" src="https://www.youtube.com/embed/qs-nccRZ-LU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class = "textDescription"><h3>Lip Sync Animation </h3><p> A short lip sync animation of two characters conversing. I was asked to choose a short audio piece and develop a concept to further practice animation techniques, especially rigging and lip syncing in Toon Boom Harmony. I designed the characters, backgrounds and shots and composited the final piece in After Effects.</p></div>
+				</div>
+				
+				<!-- LEGO Ident -->
+				<div class="popSlides">
+					<iframe class = "imgStyle" src="https://www.youtube.com/embed/XGJc2vAZbvE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class = "textDescription"><h3> LEGO Ident Sequence </h3><p>An experiment in stop motion using a Lego star wars ship. I created this as part of a hypothetical project for TRTE as an ident for younger viewers. I shot the spaceship against pieces of blue card and began removing LEGO pieces with each image. The footage was then composited in After Effects with some motion graphics added to suit. </p></div>
+				</div>
+				
+				<!-- anticipation -->
+				<div class="popSlides">
+					<iframe class = "imgStyle" src="https://www.youtube.com/embed/DWMXizpeTPU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class = "textDescription"><h3> Anticipation Exercise </h3><p>A short exercise in learning and practicing the dynamics of anticipation in animation, with elements of overlap. </p></div>
+				</div>
+				
+				<!-- sneak -->
+				<div class="popSlides">
+					<iframe class = "imgStyle" src="https://www.youtube.com/embed/9UI-GEXuHlw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class = "textDescription"><h3> Sneaking Exercise </h3><p>A short exercise in learning and practicing the dynamics of sneaking in animation.</p></div>
+				</div>
+				
+				<!-- weight exercise -->
+				<div class="popSlides">
+					<iframe class = "imgStyle" src="https://www.youtube.com/embed/L7eQoNdFNQQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class = "textDescription"><h3> Weight Exercise </h3><p>A short exercise created with use of a pre-existing character in learning and practicing the idea of weight in animation.</p></div>
+				</div>
+    
+	
+				<!-- arrows to progress through main gallery -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+				<!-- bottom thumbnails on popup -->
+				<div id = "thumbnailRow">
+				</div>
+				
+				<!-- circle nav to progress thumbnails -->
+				<div id = "thumbNav">
+				</div>
+	
+			</div>
+  
+		</div>
+	
+	
+	</section>
+	</div>
+
+
+</div>
+
+    
+</body>
+
+<footer>
+	<p>&copy; Kelly O'Flaherty 2018. E-mail: kelly-oflaherty@hotmail.com</p>
+</footer>
+
+<script type ="text/javascript" src = "scripts.js"></script>
+<script type ="text/javascript" src = "js/buttonFntn.js"></script>
+<script type ="text/javascript" src = "js/hashchangeplugin.js"></script>
+<script type ="text/javascript" src = "js/hashchange.js"></script>
+
+</html>

@@ -1,0 +1,616 @@
+/* ---------------------------------------------------MAIN PAGE ---------------------------------------------------------*/
+html {
+  max-height:100%;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #000;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  max-height:100vh;
+
+}
+
+* {
+  box-sizing: border-box;
+  /* margin: 0; */
+}
+
+.header {
+	text-align: center;
+	margin: 0 auto 2% auto;
+	max-height:10%;
+}
+
+h2 {
+	font-family: "Century Gothic";
+	color: #fff;
+}
+
+.siteTitle {
+	font-family: "Century Gothic";
+	color: #fff;
+	margin: 0;
+	font-size:2vh;
+}
+
+#headerLogo {
+	margin:1% auto 1% auto;
+	width: 10%;
+	height:10%;
+	max-height:10%;
+}
+
+.galleryNav {
+	text-align:center;
+	/*width: 100%;*/
+	height:10%;
+	
+}
+
+#navList {
+	display:inline-block;
+	width: 100%;
+	margin:auto;
+}
+
+.navLinks {
+	list-style-type:none;
+}
+
+
+.navLinks a:link {
+	color: white;
+	font-size: 1vw;
+	float: left;
+	text-decoration: none;
+	/*margin:auto;*/
+	/*padding: 0.5vw;*/
+	text-align:center;
+	width: 16%;
+}
+
+.navLinks a:visited {
+	color:white;
+	text-decoration: none;
+	list-style-type:none;
+}
+
+.navLinks a:hover {
+	color:white;
+	border-radius: 2vw;
+	background-color:#99ccff;
+	text-decoration: none;
+	list-style-type:none;
+}
+
+.navLinks a:active {
+	color:white;
+	border-radius: 2vw;
+	background-color:#4412C8;
+	text-decoration: none;
+	list-style-type:none;
+}
+
+.navLinks .current {
+	color:white;
+	background-color:#6807B5;
+	border-radius: 2vw;
+	text-decoration: none;
+	list-style-type:none;
+}
+
+#compGallery {
+	height:90%;
+	max-height:90%;
+}
+
+#pageWrapper {
+	position:relative;
+	height:90%;
+	max-height:90%;
+}
+
+
+#mainContent {
+	
+	text-align:center;
+	width: 100%;
+	height:90%;
+	max-height:90%;
+	background-color:#000;
+}
+
+#showreelArea {
+
+	position:relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+	padding-left: 12%;
+	padding-right:auto;
+	padding-top:0;
+
+}
+
+#showreel {
+    position: absolute;
+    /*top: 0;
+	left:0;*/
+    width: 75%;
+    height: 75%;
+    border: 0;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+	
+}
+
+
+#showreelBtnDiv {
+	position:absolute;
+	text-align: center;
+	background-color: DodgerBlue;
+	border: none;
+	color: white;
+	padding: 0.5%;
+	font-size: 2vh;
+	width: 15%;
+	display:block;
+	margin:43% 30% 0;
+}
+
+#showreelBtnDiv a {
+	font-family:Century;
+	text-decoration:none;
+	color:#fff;
+}
+
+#showreelBtnDiv a:hover {
+	text-decoration:italic;
+}
+
+
+.transform:before {
+	
+	position: relative;
+	z-index:100;
+}
+
+.transform {
+	z-index: 100;
+	position: absolute;
+	left: 90%;
+	top: 40%;
+	width: 10%;
+	height: 10%;
+	text-align:center;
+	overflow:visible;
+	
+	-webkit-transition: all 2s ease;  
+	-moz-transition: all 2s ease;  
+	-o-transition: all 2s ease;  
+	-ms-transition: all 2s ease;  
+	transition: all 2s ease;
+}
+
+.transform-active {
+	z-index:100;
+	position:absolute;
+	left: 5%;
+	top: 10%;
+	width: 5%;
+	height: 5%;
+	text-align:center;
+	overflow:visible;
+}
+
+
+#enterBtn {
+	margin:0;
+	font-size:6vh;
+	color:#fff;
+	background: none;
+	border:none;
+
+	
+}
+
+#enterSiteText {
+	color: #fff;
+	text-align:center;
+	font-size: 1vw;
+	font-family:Century;
+}
+
+footer {
+	clear:both;
+	color:#fff;
+	text-align:center;
+	margin:2% auto 0;
+	
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:5vh;  
+}
+
+/* showreel breakdown btn */
+.material-icons {
+	text-align:center;
+}
+
+.downloadBtn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 1% 1%;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.downloadBtn:hover {
+  background-color: RoyalBlue;
+}
+/* ---------------------------------------------------END MAIN PAGE ---------------------------------------------------------*/
+
+/* ---------------------------------------------------PORTFOLIO PAGE ---------------------------------------------------------*/
+
+#sideHeader {
+	position: absolute;
+	left:0.5%;
+	top: 50%;
+	width: 10%;
+	height:10%;
+	text-align:center;
+	overflow:visible;
+	background-color:#000;
+}
+
+#sideHeaderLogo {
+	width: 80%;
+	height: 80%;
+}
+
+#navList {
+	text-decoration: none;
+	color: white;
+}
+
+#mainContent {
+
+	width: 75%;
+	text-align:center;
+	margin:auto;
+	height:100vh;
+	max-height: 100vh;
+}
+
+.sectionTitle {
+	margin: 2% auto 2% auto;
+	text-align:center;
+	clear:both;
+}
+
+/* -----------------GALLERY ----------------*/
+
+.row > .column {
+  padding: 0 1%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 4vh;
+  margin-bottom: 3vh;
+  position:relative;
+}
+
+.column:hover img {
+	opacity: 0.3;	
+}
+
+.column:hover .thumbText {
+	opacity:1;
+}
+
+.thumbText {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.thumbText p {
+  background-color: #D5E6F9;
+  border-radius:1vh;
+  color: black;
+  font-size: 1.5vh;
+  padding:1vh;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 5%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+#popGallery {
+  position: relative;
+  background-color: #000;
+  margin: auto;
+  padding: 0;
+  width:80%;
+  height:80%;
+  max-height:80%;
+  
+}
+
+.thumbnails {
+	width: 80%;
+	height: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 2%;
+  right: 4%;
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popSlides {
+  display: none;
+  /* width: 100%; */
+  background-color: #000;
+  height:75%;
+  width:80%;
+  margin:auto;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 5%;
+  margin-top: -5%;
+  color: white;
+  font-weight: bold;
+  font-size: 3vh;
+  border-radius: 0 2% 2% 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: -5%;
+  border-radius: 3% 0 0 3%;
+}
+
+.prev {
+  left: -5%;
+  border-radius: 3% 0 0 3%;
+}
+
+.thumbProg {
+  cursor: pointer;
+  top: 80%;
+  margin-right: 10%;
+  color: white;
+  font-weight: bold;
+  font-size: 2vw;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+img {
+  margin-bottom: -2%;
+}
+
+.imgStyle {
+  opacity: 0.6;
+  height:100%;
+  width:70%;
+  object-fit:contain;
+  position:relative;
+}
+
+.active,
+.imgStyle:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
+
+.hover-shadow {
+	width: 100%;
+}
+
+.textDescription {
+	float:right;
+	width: 30%;
+	text-align:center;
+	color:#fff;
+	max-height:100%;
+	
+}
+
+.textDescription p {
+	margin:30% auto;
+	text-align: left;
+	font: Century;
+	font-size:1.75vh;
+	padding-left: 5%;
+}
+
+.thumbColumn img{
+	float:left;
+	text-align:center;
+	width: 25%;
+	height: 25%;
+	padding-left: 2%;
+}
+
+
+#thumbnailRow{
+	background-color:#000;
+	width:100%;
+	height: 25%;
+	clear:both;
+}
+
+
+#thumbNav {
+
+  clear:both;
+  margin: 5% auto;
+  bottom: 25%;
+  background:#000;
+
+}
+
+
+.column {
+	text-align:center;
+}
+/* -----------------END GALLERY ----------------*/
+#replaceContent {
+	display:inline-block;
+	width: 100%;
+	height:90%;
+	max-height:90%;
+	text-align:left;
+	margin: 0 auto;
+}
+
+#posterDiv {
+	display:inline-block;
+	width:100%;
+	height:90%;
+	max-height:90%;
+	max-width:100%;
+	object-fit:contain;
+	margin-left:20%;
+}
+
+#conceptPoster {
+	display:inline-block;
+	position:relative;
+	width: 30%;
+	height:auto;
+	max-height:90vh;
+	float:left;
+}
+
+#projectText {
+	display:inline-block;
+	position:relative;
+	width: 30%;
+	color:#fff;
+	max-height:90vh;
+	margin-left: 5%;
+	color:white;
+	text-align: left;
+	font: Century;
+}
+
+#modelSheet {
+	width: 50%;
+	height:auto;
+}
+
+/* -------------------------------- grad film page ----------------------- */
+#filmSubNav {
+	width:100%;
+	margin:auto;
+	height:10%;
+	max-height:10%;
+}
+
+
+#filmNavList {
+	list-style-type:none;
+	text-align:center;
+
+}
+
+.filmNavLink {
+	width:25%;
+	margin:0;
+	float:left;
+	display:inline;
+}
+
+
+.filmNavButton {
+
+    background-color: black;
+	width:80%;
+	border: 0.5vh solid #008CBA;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5vh;
+    cursor: pointer;
+	border-radius: 1vh;
+}
+
+#animaticContain {
+	text-align:center;
+	height:100%;
+}
+
+#animaticFrame {
+
+	height: 90%; 
+	width:90%;
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<head>
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- icon link for buttons etc.-->
+	<!-- icon link for buttons etc.-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id = "sideHeader">
+	<img id ="headerLogo" src="images/logo_cropped.png">
+	<h2 class ="siteTitle">Kelly O'Flaherty</h2>
+	<h2 class ="siteTitle">Compositing & Animation</h2>
+	<!--<h2 class = "pageHeader">Lightbox</h2> -->
+</div>
+
+<div id ="mainContent"> 
+
+	
+	<!-- Compositing and Animation Gallery -->
+	<section id = "compGallery"> 
+	<!-- gallery navigation to load new gallery on click -->
+	<nav class = "galleryNav">
+	<!--3d, compani, illustration, life drawing, photography, short film -->
+		<ul id = "navList">
+			<li class = "navLinks"><a href = "portfolio.html"><p>Compositing/Animation</p></a></li>
+			<li class = "navLinks"><a href = "illustration.html"><p>Illustration</p></a></li>
+			<li class = "navLinks"><a href = "3dwork.html"><p>3D Work</p></a></li>
+			<li class = "navLinks"><a href = "photography.html"><p>Photography</p></a></li>
+			<li class = "navLinks"><a href = "lifedrawing.html"><p>Life Drawing</p></a></li>
+			<li class = "navLinks"><a href = "gradfilm.html"><p>Graduate Film</p></a></li>
+		</ul>
+	</nav>
+	
+	<!-- inputElement.addEventListener('click', function(){
+    gotoNode(result.name);
+	});-->
+	
+	
+	<div id = "pageWrapper">
+	<h2 class ="sectionTitle"> Illustration </h2>
+		<!-- MAIN SLIDES -->
+		<div class="row">
+			<!-- spook screen logo-->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(1)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/spookScreen/spookLogo_thumb.png"> <div class ="thumbText"> <p> Spook Screen Logo </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- spook screen laurels -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(2)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/spookScreen/spookLaurels_thumb.png"><div class ="thumbText"> <p> Spook Screen Laurels </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Gluten Freak Labels -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(3)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/glutenFreak/glutenFreak_thumb.png"> <div class ="thumbText"> <p> Prop Labels </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- 26 Posters 1 -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(4)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/26posters/26poster1_thumb.jpg"> <div class ="thumbText"> <p> 26 Poster 1 </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- 26 Posters 2 -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(5)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/26posters/26poster2_thumb.jpg"> <div class ="thumbText"> <p> 26 Poster 2 </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- 26 Posters 3 -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(6)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/26posters/26poster3_thumb.jpg"> <div class ="thumbText"> <p> 26 Poster 3 </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Riverdale -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(7)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/riverdale/riverdale_thumb.png"> <div class ="thumbText"> <p> Riverdale Poster </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- WITW Poster -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(8)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/witwposter/witwPoster_thumb.png"> <div class ="thumbText"> <p> WITW Poster </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- WITW Poster mockups-->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(9) class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/witwposter/witwPoster_mockups_thumb.png"> <div class ="thumbText"> <p> Poster Mockups </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- cowboy -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(10)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/cowboy/cowboy_thumb.png"> <div class ="thumbText"> <p> Cowboy </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- concept art -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(11)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/conceptart/conceptart_thumb.jpg"> <div class ="thumbText"> <p> Concept Art </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Phoenix -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(12)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/phoenix/phoenix_thumb.png"> <div class ="thumbText"> <p> P
+				</a>
+				hoenix </p></div>
+			</div>
+			
+			<!-- Lady in Red title -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(13)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/ladyinred/lir_title_thumb.png"> <div class ="thumbText"> <p> Lady in Red </p></div>
+				</a>
+				
+			</div>
+						
+			<!-- Zeus  -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(14)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/zeus/zeus_thumb.png"> <div class ="thumbText"> <p> Zeus Character </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Hansel -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(15)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/hansel/hansel_thumb.png"> <div class ="thumbText"> <p> Game Background </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Glucksman -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(16)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/illustration/glucksman/glucksman_thumb.png"> <div class ="thumbText"> <p> Glucksman Poster </p></div>
+				</a>
+				
+			</div>
+  
+		</div>
+		
+		
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div id="popGallery">
+
+				<!-- slideshow pop up -->
+				
+				<!-- Spook Screen Logo--->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/spookScreen/spooklogo_final_web.png">
+					<div class = "textDescription"><h3> Spook Screen Logo </h3><p>I created the logo for Deep Red Production's Spook Screen Film Festival happening in Cork in September 2018. The logo was created in Adobe Illustrator.</p></div>
+				</div>
+				
+				<!-- Spook Screen Laurels -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/spookScreen/logo_laurels_web.png">
+					<!-- <img class="imgStyle" src="images/compani/dmp/dmp_bright_edit_opt.jpg"> -->
+					<div class = "textDescription"><h3> Spook Screen Laurels </h3><p>As well as the logo, I also created the laurels for Deep Red Production's Spook Screen Film Festival (September 2018). These laurels would thus be used by those who have submitted films to the festival to promote their work. The laurels were created in Adobe Illustrator.</p></div>
+				</div>
+				
+				<!-- Gluten Freak (short film) Prop Labels -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/glutenFreak/labels_combined.jpg"> 
+					<div class = "textDescription"><h3> Gluten Freak (short film) Prop Labels </h3><p> I created some graphic design labels to be placed on some props for a short film, "Gluten Freak" by Fergus Burke, filmed in June 2018. These labels were designed in Adobe Illustrator.</p></div>
+				</div>
+
+				<!-- 26 posters 1 -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/26posters/26poster1_web.jpg"> 
+					<div class = "textDescription"><h3> 26 Poster 1 </h3><p> These posters were created for use in a fan-made video for Paramore's "26" (as yet unreleased) under the basic premise of a struggling actors life. I received green-screen imagery of the main actor and created these images to be placed in the background of the video. These were created in Adobe Photoshop. </p></div>
+				</div>
+				
+				<!-- 26 posters 2 -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/26posters/26poster2_web.jpg"> 
+					<div class = "textDescription"><h3> 26 Poster 2 </h3><p> These posters were created for use in a fan-made video for Paramore's "26" (as yet unreleased) under the basic premise of a struggling actors life. I received green-screen imagery of the main actor and created these images to be placed in the background of the video. These were created in Adobe Photoshop. </p></div>
+				</div>
+				
+				<!-- 26 posters 3 -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/26posters/26poster3_web.jpg"> 
+					<div class = "textDescription"><h3> 26 Poster 3 </h3><p> These posters were created for use in a fan-made video for Paramore's "26" (as yet unreleased) under the basic premise of a struggling actors life. I received green-screen imagery of the main actor and created these images to be placed in the background of the video. These were created in Adobe Photoshop. </p></div>
+				</div>
+				
+				<!-- Riverdale -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/riverdale/riverdale_poster_web.jpg"> 
+					<div class = "textDescription"><h3>Riverdale </h3><p> A piece of fan art I created based upon Netflix's Riverdale. Created in Adobe Photoshop.</p></div>
+				</div>
+				
+				<!-- WITW Poster -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/witwposter/witw_poster_web.jpg"> 
+					<div class = "textDescription"><h3> Wishes In The Wind Poster </h3><p>A poster created to coincide with "Wishes in the Wind"; a short film that I worked on as part of my second year on the Digital Animation Production course in LIT, Clonmel. Created in Photoshop. </p></div>
+				</div>
+				
+				<!-- WITW Poster Mockups -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/witwposter/witw_poster_mockups.jpg"> 
+					<div class = "textDescription"><h3> Wishes In The Wind Poster Mock-ups </h3><p>Mock-ups produced whilst developing my design for the "Wishes in the Wind" poster.</p></div>
+				</div>
+				
+				
+				<!-- cowboy -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/cowboy/character_resize.jpg"> 
+					<div class = "textDescription"><h3> Cowboy Character Design </h3><p> Character design of a cowboy created as a college assignment. Once designed, the character was digitally painted to match a variation of weather situations. Created in Adobe Photoshop.</p></div>
+				</div>
+			
+				<!-- concept art -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/conceptart/conceptart_web.jpg"> 
+					<div class = "textDescription"><h3> Concept Art: Death </h3><p> A concept art piece created as an exercise in dynamic angles and digital painting. Created in Adobe Photoshop.</p></div>
+				</div>
+			
+				<!-- Phoenix -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/phoenix/phoenix_web.jpg"> 
+					<div class = "textDescription"><h3> Even the Best Writer has to Erase </h3><p>Illustration based on the above title as a prompt. Elements sourced online and composited to create this piece, in Photoshop.</p></div>
+				</div>
+			
+				<!-- Lady in Red title -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/ladyinred/lir_title.jpg"> 
+					<div class = "textDescription"><h3> Lady in Red Title </h3><p>Title screen created for a visual novel flash game during my time studying Digital Media in Colaiste Stiofain Naofa. Created in Photoshop.</p></div>
+				
+				</div>
+			
+				<!-- Zeus  -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/zeus/zeus.jpg">
+					<div class = "textDescription"><h3> Zeus Character Design </h3><p> Character design of baby Zeus. Created in Adobe Illustrator.</p></div>				 
+				
+				</div>
+			
+				<!-- Hansel -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/hansel/hansel_bg.jpg"> 
+					<div class = "textDescription"><h3>Hansel & Gretel Background Design </h3><p>A hypothetical game background design based on the tale of Hansel and Gretel. Created in Adobe Illustrator.</p></div>
+				
+				</div>
+			
+				<!-- Glucksman -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/illustration/glucksman/Glucksman Poster.jpg"> 
+					<div class = "textDescription"><h3> Glucksman Poster </h3><p>This poster was developed from photographs taken (by myself) of the Glucksman Gallery in University College, Cork. The brief was to focus on defined shapes to draw up a graphical poster for the gallery. Created in Photoshop.</p></div>
+				
+				</div>
+			
+    
+	
+				<!-- arrows to progress through main gallery -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+				
+		
+				<!-- bottom thumbnails on popup -->
+				<div id = "thumbnailRow">
+					
+				</div>
+				
+				<!-- circle nav to progress thumbnails -->
+				<div id = "thumbNav">
+
+				</div>
+	
+			</div>
+  
+		</div>
+	
+	
+	</section>
+	</div>
+
+
+</div>
+
+    
+</body>
+
+<!--<footer>
+	<p>&copy; Kelly O'Flaherty 2018. E-mail: kelly-oflaherty@hotmail.com</p>
+</footer>-->
+
+<script type ="text/javascript" src = "scripts.js"></script>
+<script type ="text/javascript" src = "js/buttonFntn.js"></script>
+<script type ="text/javascript" src = "js/hashchangeplugin.js"></script>
+<script type ="text/javascript" src = "js/hashchange.js"></script>
+
+
+</html>

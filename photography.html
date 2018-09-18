@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<head>
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- icon link for buttons etc.-->
+	<!-- icon link for buttons etc.-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id = "sideHeader">
+	<img id ="headerLogo" src="images/logo_cropped.png">
+	<h2 class ="siteTitle">Kelly O'Flaherty</h2>
+	<h2 class ="siteTitle">Compositing & Animation</h2>
+	<!--<h2 class = "pageHeader">Lightbox</h2> -->
+</div>
+
+<div id ="mainContent"> 
+
+	
+	<!-- Compositing and Animation Gallery -->
+	<section id = "compGallery"> 
+	<!-- gallery navigation to load new gallery on click -->
+	<nav class = "galleryNav">
+	<!--3d, compani, illustration, life drawing, photography, short film -->
+		<ul id = "navList">
+			<li class = "navLinks"><a href = "portfolio.html"><p>Compositing/Animation</p></a></li>
+			<li class = "navLinks"><a href = "illustration.html"><p>Illustration</p></a></li>
+			<li class = "navLinks"><a href = "3dwork.html"><p>3D Work</p></a></li>
+			<li class = "navLinks"><a href = "photography.html"><p>Photography</p></a></li>
+			<li class = "navLinks"><a href = "lifedrawing.html"><p>Life Drawing</p></a></li>
+			<li class = "navLinks"><a href = "gradfilm.html"><p>Graduate Film</p></a></li>
+		</ul>
+	</nav>
+	
+	<!-- inputElement.addEventListener('click', function(){
+    gotoNode(result.name);
+	});-->
+	
+	
+	<div id = "pageWrapper">
+	<h2 class ="sectionTitle"> Photography </h2>
+		<!-- MAIN SLIDES -->
+		<div class="row">
+			<!-- music bw-->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(1)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/photography/thumbs/music_bw_thumb.png"> <div class ="thumbText"> <p> Music </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- berries -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(2)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/photography/thumbs/berries_thumb.png"> <div class ="thumbText"> <p> Berries </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Lifesaver -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(3)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/photography/thumbs/lifesaver_thumb.png"> <div class ="thumbText"> <p> Lifesaver </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Diptych -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(4)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/photography/thumbs/diptych_thumb.png"> <div class ="thumbText"> <p> Architecture Diptych </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Bantry House -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(5)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/photography/thumbs/bantry_house_thumb.png"> <div class ="thumbText"> <p> Bantry House </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Bantry Garden-->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(6)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/photography/thumbs/bantry_garden_thumb.png"> <div class ="thumbText"> <p> Bantry Garden </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Bantry Stairs -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(7)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/photography/thumbs/bantry_stairs_thumb.png"> <div class ="thumbText"> <p> Bantry Steps </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Church Tower -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(8)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/photography/thumbs/church2_thumb.png"> <div class ="thumbText"> <p> Church Tower </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Church -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(9)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/photography/thumbs/church1_thumb.png"> <div class ="thumbText"> <p> Church </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Sea-->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(10) class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/photography/thumbs/sea_thumb.png"> <div class ="thumbText"> <p> Sea </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Grave 1 -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(11)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/photography/thumbs/grave1_thumb.png"> <div class ="thumbText"> <p> Gravestones </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Grave 2 -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(12)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/photography/thumbs/grave_ilm_thumb.png"> <div class ="thumbText"> <p> Gravestone </p></div>
+				</a>
+				
+			</div>
+  
+		</div>
+		
+		
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div id="popGallery">
+
+				<!-- slideshow pop up -->
+				
+				<!-- Music BW--->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/photography/opt/music_bw.jpg">
+					<div class = "textDescription"><h3> Music </h3><p>Photograph arranged, shot and composited.</p></div>
+				</div>
+				
+				<!-- Berries -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/photography/opt/berries.jpg">
+					<!-- <img class="imgStyle" src="images/compani/dmp/dmp_bright_edit_opt.jpg"> -->
+					<div class = "textDescription"><h3> Berries </h3><p>Berries photographed and composited in Photoshop to create black and white image with a hint of colour.</p></div>
+				</div>
+				
+				<!-- Lifesaver -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/photography/opt/lifesaver.jpg"> 
+					<div class = "textDescription"><h3> Lifesaver </h3><p> Photograph of a lifesaver, composited in Photoshop to allow the lifesaver to remain in colour whilst the background is desaturated.</p></div>
+				</div>
+
+				<!-- Diptych -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/photography/opt/diptych.jpg"> 
+					<div class = "textDescription"><h3> Architectural Diptych </h3><p> Diptych created to seamlessly merge two photographs taken of the River Lee Hotel in Cork. </p></div>
+				</div>
+				
+				<!-- Bantry House -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/photography/opt/bantry_house.jpg"> 
+					<div class = "textDescription"><h3> Bantry House </h3><p> Photograph of Bantry House, Cork taken atop the opposing "100 steps" </p></div>
+				</div>
+				
+				<!-- Bantry Garden -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/photography/opt/bantry_garden.jpg"> 
+					<div class = "textDescription"><h3> Bantry Garden </h3><p> Photograph of the impressive garden surrounding Bantry House. </p></div>
+				</div>
+				
+				<!-- Bantry Stairs -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/photography/opt/bantry_stairs.jpg"> 
+					<div class = "textDescription"><h3>Bantry Steps </h3><p> The infamous "100 steps" of Bantry house.</p></div>
+				</div>
+				
+				<!-- Church Tower  -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/photography/opt/church2.jpg"> 
+					<div class = "textDescription"><h3> Church with Birds </h3><p>Photograph capturing birds in flight around a church tower. </p></div>
+				</div>
+				
+				<!-- Church 2 -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/photography/opt/church1.jpg"> 
+					<div class = "textDescription"><h3> Church Photgraph </h3><p>Photograph of exterior of church in Clonmel, Tipperary.</p></div>
+				</div>
+				
+				
+				<!-- Sea -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/photography/opt/sea.jpg"> 
+					<div class = "textDescription"><h3> Landscape Photograph </h3><p> Photograph from the pier overlooking the ocean with mountains in the distance.</p></div>
+				</div>
+			
+				<!-- Grave 1 -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/photography/opt/grave1.jpg"> 
+					<div class = "textDescription"><h3> Graveyard Tombstones </h3><p> Discarded tombstones found in St. Finbarr's Cathedral, Cork.</p></div>
+				</div>
+			
+				<!-- Grave 2 -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/photography/opt/grave_ilm.jpg"> 
+					<div class = "textDescription"><h3> Graveyard Tombstone: In Loving Memory </h3><p>Photograph of an old tombstone in St. Finbarr's Cathedral, Cork.</p></div>
+				</div>
+				
+				
+				<!-- arrows to progress through main gallery -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+				
+		
+				<!-- bottom thumbnails on popup -->
+				<div id = "thumbnailRow">
+					
+				</div>
+				
+				<!-- circle nav to progress thumbnails -->
+				<div id = "thumbNav">
+
+				</div>
+	
+			</div>
+  
+		</div>
+	
+	
+	</section>
+	</div>
+
+
+</div>
+
+    
+</body>
+
+<!--<footer>
+	<p>&copy; Kelly O'Flaherty 2018. E-mail: kelly-oflaherty@hotmail.com</p>
+</footer>-->
+
+<script type ="text/javascript" src = "scripts.js"></script>
+<script type ="text/javascript" src = "js/buttonFntn.js"></script>
+<script type ="text/javascript" src = "js/hashchangeplugin.js"></script>
+<script type ="text/javascript" src = "js/hashchange.js"></script>
+
+
+</html>

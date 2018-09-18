@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<head>
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	
+	<!-- icon link for buttons etc.-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id = "sideHeader">
+
+
+	<img id ="headerLogo" src="images/logo_cropped.png">
+	<h2 class ="siteTitle">Kelly O'Flaherty</h2>
+	<h2 class ="siteTitle">Compositing & Animation</h2>
+	<!--<h2 class = "pageHeader">Lightbox</h2> -->
+</div>
+
+<aside class = "transform-active">
+	<!-- button on right leads to site-->
+	<!-- onclick="loadContent('portfolio.html'); -->
+	<a id ="enterBtn" ><i class="far fa-arrow-alt-circle-left"></i></a>
+	<p id ="enterSiteText"> SHOWREEL </p>
+</aside>
+	
+
+<div id ="mainContent"> 
+
+	
+	<!-- Compositing and Animation Gallery -->
+	<section id = "compGallery"> 
+	<!-- gallery navigation to load new gallery on click -->
+	<nav class = "galleryNav">
+	<!--3d, compani, illustration, life drawing, photography, short film -->
+		<ul id = "navList">
+			<li class = "navLinks"><a href = "portfolio.html"><p>Compositing/<br>Animation</p></a></li>
+			<li class = "navLinks"><a href = "illustration.html"><p>Illustration</p></a></li>
+			<li class = "navLinks"><a href = "3dwork.html"><p>3D Work</p></a></li>
+			<li class = "navLinks"><a href = "photography.html"><p>Photography</p></a></li>
+			<li class = "navLinks"><a href = "lifedrawing.html"><p>Life Drawing</p></a></li>
+			<li class = "navLinks"><a href = "gradfilm.html"><p>Graduate Film</p></a></li>
+		</ul>
+	</nav>
+	
+
+	
+	<div id = "pageWrapper">
+	<h2 class ="sectionTitle"> Compositing & Animation </h2>
+		<!-- MAIN SLIDES -->
+		<div class="row">
+			<!-- bike -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(1)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/3d/bike/bike_thumb.png"> <div class ="thumbText"> <p> 3D Bike </p></div>
+				</a>
+				
+			</div>
+			<!-- bust -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(2)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/3d/bust/bust_thumb.png"> <div class ="thumbText"> <p> 3D Bust </p></div>
+				
+				</a>
+				
+			</div>
+			<!-- character -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(3)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/3d/scientist/character_thumb.png"> <div class ="thumbText"> <p> 3D Scientist </p></div>
+				</a>
+				
+			</div>
+			<!-- keyboard -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(4)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/3d/keyboard/keyboard_thumb.png"> <div class ="thumbText"> <p> 3D Keyboard </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- pineapple -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(5)" class="hover-shadow cursor"> <img class = "thumbnails" width = "80%" height = "80%" src="images/3d/pineapple/pineapple_thumb.png"> <div class ="thumbText"> <p> 3D Pineapple </p></div>
+				</a>
+				
+			</div>
+			
+			
+		</div>
+		
+		
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div id="popGallery">
+
+				<!-- slideshow pop up -->
+				
+				<!-- bike--->
+				<div class="popSlides">
+					<iframe class = "imgStyle" width="1020" height="630" src="https://www.youtube.com/embed/0kYAvSHZe7g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class = "textDescription"><h3> "Curse of Curves" 3d Animation </h3><p> Short 3d animaiton created for a client with the intention of being showcased alongside their work during a fashion show/exhibition. The video's concept follows the idea behind the client's fashion collection; redesigning costumes for "pit girls" in racing. The colours used are also based upon the clients collection and inspiration. <br>
+					I modelled this bike entirely within Maya with the exception of the engine which was sourced online. It was then composited with the addition of motion graphics in After Effects.
+					</p></div>
+				</div>
+				
+				<!-- bust -->
+				<div class="popSlides">
+					<img class = "imgStyle" width = "80%" height = "80%" src="images/3d/bust/bust_thumb.png">
+					<div class = "textDescription"><h3> 3D Bust </h3><p> 3D bust modelled and textured in Maya with further sculpting in ZBrush. </p></div>
+				</div>
+				
+				<!-- character -->
+				<div class="popSlides">
+					<img class = "imgStyle" width = "80%" height = "80%" src="images/3d/scientist/character_thumb.png"> 
+					<div class = "textDescription"><h3>3d Scientist Character </h3><p> 3d character modelled and textured in Autodesk Maya. This character is an original concept of mine also.</p></div>
+				</div>
+
+				<!-- keyboard -->
+				<div class="popSlides">
+					<iframe class = "imgStyle" width="1020" height="630" src="https://www.youtube.com/embed/MiMMWJDBNrk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class = "textDescription"><h3> 3D Keyboard </h3><p> 3d keyboard turntable animation. Modelled and textured in 3DS Max. </p></div>
+				</div>
+				
+				<!-- pineapple -->
+				<div class="popSlides">
+					<iframe class = "imgStyle" width="1020" height="630" src="https://www.youtube.com/embed/udX_sDuv-ww" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class = "textDescription"><h3> 3D Pineapple </h3><p> 3d pineapple model created in 3ds Max with textures created in Photoshop.</p></div>
+				</div>
+    
+	
+				<!-- arrows to progress through main gallery -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+				<!-- bottom thumbnails on popup -->
+				<div id = "thumbnailRow">
+				</div>
+				
+				<!-- circle nav to progress thumbnails -->
+				<div id = "thumbNav">
+				</div>
+	
+			</div>
+  
+		</div>
+	
+	
+	</section>
+	</div>
+
+
+</div>
+
+    
+</body>
+
+<footer>
+	<p>&copy; Kelly O'Flaherty 2018. E-mail: kelly-oflaherty@hotmail.com</p>
+</footer>
+
+<script type ="text/javascript" src = "scripts.js"></script>
+<script type ="text/javascript" src = "js/buttonFntn.js"></script>
+<script type ="text/javascript" src = "js/hashchangeplugin.js"></script>
+<script type ="text/javascript" src = "js/hashchange.js"></script>
+
+</html>

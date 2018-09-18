@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<head>
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<!-- icon link for buttons etc.-->
+	<!-- icon link for buttons etc.-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+	
+</head>
+
+<body>
+
+<header>
+</header>
+
+<div id = "sideHeader">
+	<img id ="headerLogo" src="images/logo_cropped.png">
+	<h2 class ="siteTitle">Kelly O'Flaherty</h2>
+	<h2 class ="siteTitle">Compositing & Animation</h2>
+	<!--<h2 class = "pageHeader">Lightbox</h2> -->
+</div>
+
+<div id ="mainContent"> 
+
+	
+	<!-- Compositing and Animation Gallery -->
+	<section id = "compGallery"> 
+	<!-- gallery navigation to load new gallery on click -->
+	<nav class = "galleryNav">
+	<!--3d, compani, illustration, life drawing, photography, short film -->
+		<ul id = "navList">
+			<li class = "navLinks"><a href = "portfolio.html"><p>Compositing/Animation</p></a></li>
+			<li class = "navLinks"><a href = "illustration.html"><p>Illustration</p></a></li>
+			<li class = "navLinks"><a href = "3dwork.html"><p>3D Work</p></a></li>
+			<li class = "navLinks"><a href = "photography.html"><p>Photography</p></a></li>
+			<li class = "navLinks"><a href = "lifedrawing.html"><p>Life Drawing</p></a></li>
+			<li class = "navLinks"><a href = "gradfilm.html"><p>Graduate Film</p></a></li>
+		</ul>
+	</nav>
+	
+	<!-- inputElement.addEventListener('click', function(){
+    gotoNode(result.name);
+	});-->
+	
+	
+	<div id = "pageWrapper">
+	<h2 class ="sectionTitle"> Life Drawing </h2>
+		<!-- MAIN SLIDES -->
+		<div class="row">
+			<!-- berry sketch-->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(1)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/Life Drawing/berry_thumb.png"> <div class ="thumbText"> <p> Berry Sketch </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- branch -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(2)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/Life Drawing/branch_thumb.png"> <div class ="thumbText"> <p> Branch Painting </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- dreamcatcher -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(3)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/Life Drawing/catcher_thumb.png"> <div class ="thumbText"> <p> Dreamcatcher </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- cup -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(4)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/Life Drawing/cup_thumb.png"> <div class ="thumbText"> <p> Cup Life Drawing </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- feather -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(5)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/Life Drawing/feather_thumb.png"> <div class ="thumbText"> <p> Feather Drawing </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- figure -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(6)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/Life Drawing/figure_thumb.png"> <div class ="thumbText"> <p> Figure Drawing </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- heron -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(7)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/Life Drawing/heron_thumb.png"> <div class ="thumbText"> <p> Heron Sketch </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Violin -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(8)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/Life Drawing/violin_thumb.png"> <div class ="thumbText"> <p> Violin Drawing </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Raven -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(9) class="hover-shadow cursor"> <img class = "thumbnails" src="images/Life Drawing/raven_thumb.png"> <div class ="thumbText"> <p> Raven Sketch </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Rock -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(10)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/Life Drawing/rocks_thumb.png"> <div class ="thumbText"> <p> Rock Sketch </p></div>
+				</a>
+				
+			</div>
+			
+			<!-- Lamp -->
+			<div class="column">
+				<a onclick="openModal();copyThumbs();currentSlide(11)" class="hover-shadow cursor"> <img class = "thumbnails" src="images/Life Drawing/lamp_thumb.png"> <div class ="thumbText"> <p> Lamp Life Drawing </p></div>
+				</a>
+				
+			</div>
+		</div>
+		
+		
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div id="popGallery">
+
+				<!-- slideshow pop up -->
+				
+				<!-- Berry --->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/Life Drawing/berry_sketch.jpg">
+					<div class = "textDescription"><h3> Berry Sketch </h3><p> Life drawing of some berries in a bush. </p></div>
+				</div>
+				
+				<!-- Branch  -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/Life Drawing/branch.jpg">
+					<!-- <img class="imgStyle" src="images/compani/dmp/dmp_bright_edit_opt.jpg"> -->
+					<div class = "textDescription"><h3> Branch Painting </h3><p>Life drawing and painting of a branch and its leaves.</p></div>
+				</div>
+				
+				<!-- Dreamcatcher -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/Life Drawing/catcher_sketch.jpg"> 
+					<div class = "textDescription"><h3> Dreamcatcher Sketch </h3><p> Sketch of a hanging dreamcatcher. Some colour added with watercolour pencils.</p></div>
+				</div>
+
+				<!-- cup -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/Life Drawing/cup_sketch.jpg"> 
+					<div class = "textDescription"><h3> Mug Sketch </h3><p> Life drawing sketch of a coffee mug.</p></div>
+				</div>
+				
+				<!-- feather -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/Life Drawing/feather_sketch.jpg"> 
+					<div class = "textDescription"><h3> Feather and Pin Cushion </h3><p> Drawing of a feather sitting beside a pin cushion. Coloured with inks.</p></div>
+				</div>
+				
+				<!-- figure -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/Life Drawing/figure_sketch.jpg"> 
+					<div class = "textDescription"><h3> Figure </h3><p> Life drawing of a seated figure completed in under thirty minutes. </p></div>
+				</div>
+				
+				<!-- heron -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/Life Drawing/heron_sketch.jpg"> 
+					<div class = "textDescription"><h3>Heron sketch </h3><p> Sketch of a heron spotted in the river. </p></div>
+				</div>
+				
+				<!-- violin -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/Life Drawing/violin_sketch.jpg"> 
+					<div class = "textDescription"><h3> Violin </h3><p> Sketch of a violin in perspective.</p></div>
+				</div>
+				
+				<!-- raven -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/Life Drawing/raven_sketch.jpg"> 
+					<div class = "textDescription"><h3> Raven sketch </h3><p> Sketch of a raven from reference. </p></div>
+				</div>
+				
+				
+				<!-- rocks -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/Life Drawing/rocks_sketch.jpg"> 
+					<div class = "textDescription"><h3> Rocks </h3><p> Sketch of a bed of rocks overlooking a river.</p></div>
+				</div>
+			
+				<!-- lamp -->
+				<div class="popSlides">
+					<img class = "imgStyle" src="images/Life Drawing/lamp_sketch.jpg"> 
+					<div class = "textDescription"><h3> Lamp and Book </h3><p> Life drawing of a book and lamp, coloured in watercolour pencils.</p></div>
+				</div>
+
+				<!-- arrows to progress through main gallery -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				
+				
+		
+				<!-- bottom thumbnails on popup -->
+				<div id = "thumbnailRow">
+					
+				</div>
+				
+				<!-- circle nav to progress thumbnails -->
+				<div id = "thumbNav">
+
+				</div>
+	
+			</div>
+  
+		</div>
+	
+	
+	</section>
+	</div>
+
+
+</div>
+
+    
+</body>
+
+<!--<footer>
+	<p>&copy; Kelly O'Flaherty 2018. E-mail: kelly-oflaherty@hotmail.com</p>
+</footer>-->
+
+<script type ="text/javascript" src = "scripts.js"></script>
+<script type ="text/javascript" src = "js/buttonFntn.js"></script>
+<script type ="text/javascript" src = "js/hashchangeplugin.js"></script>
+<script type ="text/javascript" src = "js/hashchange.js"></script>
+
+
+</html>
