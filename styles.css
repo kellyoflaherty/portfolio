@@ -143,14 +143,14 @@ h2 {
 	background-color: DodgerBlue;
 	border: none;
 	padding: 0.5%;
-	width: 15%;
+	width: 10vw;
 	display:block;
 	margin:43% 30% 0;
 }
 
 #showreelBtnDiv p {
 	color:white;
-	font-size:2vh;
+	font-size:1vh;
 }
 
 #showreelBtnDiv a {
